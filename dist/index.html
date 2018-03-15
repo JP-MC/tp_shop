@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brandname"><h1>ShopApp</h1></div>
+        <div class="wrap-button"><div id="admin-button" class="button">Administration</div></div>
+    </header>
+
+    <div id="main">
+
+        <div id="map"></div>
+
+        <div id="sidebar">
+
+            <h3>Ajouter un magasin</h3>
+            <form id="shop-form">
+                <label for="">Label</label><br>
+                <input type="text" id="shop-name"><br>
+                <label for="">Description</label><br>
+                <input type="text" id="shop-description"><br>
+                <label for="">Latitude</label><br>
+                <input type="text" id="latitude"><br>
+                <label for="">Longitude</label><br>
+                <input type="text" id="longitude"><br>
+                <label for="">Type</label><br>
+                <input type="submit" value="Valider">
+            </form>
+
+            <h3>Ajouter un Vendeur</h3>
+            <form id="seller-form">
+                <label for="">Nom</label><br>
+                <input type="text" id="seller-name"><br>
+                <label for="">Prénom</label><br>
+                <input type="text" id="seller-firstname"><br>
+                <input type="submit" value="Valider">
+            </form>
+
+            <h3>Ajouter un produit</h3>
+            <form id="product-form">
+                <label for="">Nom</label><br>
+                <input type="text" id="product-name"><br>
+                <label for="">Prix</label><br>
+                <input type="text" id="product-price"><br>
+                <label for="">Image</label><br>
+                <input type="text" id="product-img"><br>
+                <input type="submit" value="Valider">
+            </form>
+
+        </div>
+    </div>
+
+    <div id="main-form-container">
+        <div><div id="close-main-form" class="button">Fermer</div></div>
+        <div id="main-form"></div>
+    </div>
+
+    <script src="system.js"></script>
+    <script src="main.js"></script>
+    
+    <script>
+        function initApp(){
+            System.import("main");
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBLr8IjMfO2Y3sRZKQGXGxpsLU8uP-90c&callback=initApp"
+    async defer></script>
+</body>
+</html>

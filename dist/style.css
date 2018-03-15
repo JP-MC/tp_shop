@@ -1,0 +1,27 @@
+body{margin:0;padding:0;min-height:100vh;display:flex;flex-direction:column;font-family:Arial,Helvetica,sans-serif;}
+header{display:flex;align-items:center;flex:0 0 50px;background-color:#002e78;color:#fff;}
+header h1{padding:0 1em;}
+header .brandname{flex:1;}
+header .wrap-button{flex:0 0 200px;padding: 0 1em;}
+header .wrap-button .button{text-align:center;}
+
+#main{display:flex;flex:1;}
+#map{flex:1;}
+#map .gm-style-iw ul{margin:0;padding:0;list-style-type:none;}
+#sidebar{flex:0 0 200px;padding:0 1em;border-left:1px solid #000;}
+
+.button{padding:0.4em 1em;border-radius:5px;color:#fff;background-color:#2a75ed;font-weight:600;cursor:pointer;}
+.button:hover{color:#fff;background-color:#4285f4;}
+.td,li .button{display:inline-block;}
+
+#main-form-container{position:fixed;top:0;bottom:0;left:0;right:0;background-color:rgba(255,255,255,0.8);z-index:99;display:none;}
+#main-form{display:flex;}
+#main-form>ul{font-size:0.8em;flex:1 1 auto;padding:0 1em 1em 1em;margin:0 1em;list-style-type:none;background-color:#fff;overflow:auto;max-height:100vh;box-sizing:border-box;}
+#main-form li{margin-bottom:0.4em;background-color:#eee;}
+#main-form li.current{background-color:#92bbfc;}
+#main-form .shop{cursor:pointer;}
+#main-form .shop:hover{color:#fff;background-color:#4285f4;}
+#main-form .shop.current{background-color:#92bbfc;cursor:auto;}
+#main-form .shop.current:hover{background-color:#92bbfc;color:#000;}
+#main-form .td,#main-form li .button{display:inline-block;padding: 0.2em 0.6em;}
+#main-form .delete-shop,#main-form .delete-seller,#main-form .delete-product{float:right;}
